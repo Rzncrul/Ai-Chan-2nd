@@ -12,7 +12,6 @@ const Discord = require('discord.js');
      if (message.content === 'hug'){
      	message.reply('W-WHO SAID U CAN HUG ME?');
 -  	}
-+    }
 +    if (message.isMentioned(client.user)) {
 +    message.reply('Nani?');
 +}
