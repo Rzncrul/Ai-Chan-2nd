@@ -6,10 +6,11 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.toLowerCase() === 'touch') {
+    var str = message.content;
+    if (str.toLowerCase() === 'touch') {
     	message.reply('Kyaaaaa...!Captain is a pervert!Reporting to headquarters.');
   	}
-    if (message.content.toLowerCase() === 'hug') || (message.content === 'Hug') {
+    if (str.toLowerCase() === 'hug') || (message.content === 'Hug') {
     	message.reply('W-WHO SAID U CAN HUG ME?');
     }
     if (message.isMentioned(client.user)) {
