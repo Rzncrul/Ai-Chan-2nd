@@ -7,10 +7,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
     msg = message.content.toLowerCase();
-    if (msg.startsWith("touch")) {
+    if (msg.startsWith(prefix + "touch")) {
     	message.reply("Kyaaa!");
   	}
-    if (message.content === 'hug') {
+    if (msg.startsWith(prefix + "hug")) {
     	message.reply('W-WHO SAID YOU CAN TOUCH ME?');
   	}
       if (message.isMentioned(client.user)) {
