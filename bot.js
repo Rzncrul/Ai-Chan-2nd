@@ -5,7 +5,8 @@
       console.log('I am ready!');
   });
   
-  client.on('message', message => {
+  client.on('message', message => 
+  {
       if (message.content === 'touch') {
       	message.reply('Kyaaaaa...!Captain is a pervert!Reporting to headquarters.');
     	}
