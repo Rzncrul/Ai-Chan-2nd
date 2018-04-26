@@ -6,8 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'touch') {
-    	message.reply('Kyaaa!');
+    msg = message.content.toLowerCase();
+    if (msg.startswith("touch")) {
+    	message.reply("Kyaaa!");
   	}
     if (message.content === 'hug') {
     	message.reply('W-WHO SAID YOU CAN TOUCH ME?');
