@@ -6,13 +6,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    prefix = "?";
+    prefix = "/";
     msg = message.content.toLowerCase();
     if (msg.startsWith(prefix + "touch")) {
     	message.reply("Kyaaa!");
   	}
     if (msg.startsWith(prefix + "hug")) {
-    	message.reply('W-WHO SAID YOU CAN TOUCH ME?');
+    	message.reply("W-WHO SAID YOU CAN TOUCH ME?");
+  	}
+    if (msg.startsWith(prefix + "help")) {
+    	message.channel.send("Fanmade AI Chan at your service: (Here is the list of commands) \n /touch \n /hug");
   	}
       if (message.isMentioned(client.user)) {
     message.reply('Nani?');
