@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '@Ai Chan 2nd touch') {
+    if (message.content === 'touch') {
     	message.reply('Kyaaaaa...!Captain is a pervert!Reporting to headquarters.');
   	}
 });
