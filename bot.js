@@ -15,7 +15,7 @@ client.on('message', message => {
     	message.reply("W-WHO SAID YOU CAN TOUCH ME?");
   	}
     if (msg.startsWith(prefix + "help")) {
-    	message.channel.send("Fanmade AI Chan at your service: (Here is the list of commands) \n /touch \n /hug");
+    	message.channel.send("Fanmade AI Chan at your service: (Here is the list of commands) \n -touch \n -hug");
   	}
       if (message.isMentioned(client.user)) {
     message.reply('Nani?');
