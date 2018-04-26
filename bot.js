@@ -6,6 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    prefix = "!";
     msg = message.content.toLowerCase();
     if (msg.startsWith(prefix + "touch")) {
     	message.reply("Kyaaa!");
