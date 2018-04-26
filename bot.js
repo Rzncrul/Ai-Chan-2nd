@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === '@Ai Chan 2nd touch') {
+    	message.reply('Kyaaaaa...!Captain is a pervert!Reporting to headquarters.');
   	}
 });
 
