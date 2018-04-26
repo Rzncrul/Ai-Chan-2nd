@@ -18,7 +18,7 @@ client.on('message', message => {
     	message.channel.send("Fanmade AI Chan at your service: (Here is the list of commands) \n -touch \n -hug");
   	}
     if (msg.startsWith(prefix + "goodnight")) {
-    	message.channel.send("Oyasumi Kaichou ^^");
+    	message.reply("Oyasumi Kaichou ^^");
   	}
       if (message.isMentioned(client.user)) {
     message.reply('Nani?');
