@@ -17,6 +17,9 @@ client.on('message', message => {
     if (msg.startsWith(prefix + "help")) {
     	message.channel.send("Fanmade AI Chan at your service: (Here is the list of commands) \n -touch \n -hug");
   	}
+    if (msg.startsWith(prefix + "insult")) {
+    	message.channel.send("Jedvin Sama is gay kaichou!");
+  	}
     if (msg.startsWith(prefix + "goodnight")) {
     	message.reply("Oyasumi Kaichou ^^");
   	}
